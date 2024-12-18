@@ -11,8 +11,9 @@ const App = () => {
   };
   return (
     <div>
+      <h1>Full Name Display</h1>
       <form onSubmit={handleSubmit}>
-        <label for="name">First name:</label>
+        <label htmlFor="firstname">First name:</label>
         <input
           type="text"
           id="name"
@@ -22,7 +23,7 @@ const App = () => {
           required
         />
         <br />
-        <label for="name">Last name:</label>
+        <label htmlFor="lastname">Last name:</label>
         <input
           type="text"
           value={lastName}
@@ -30,7 +31,7 @@ const App = () => {
           placeholder="Last Name"
           required
         />
-<br />
+        <br />
         <button type="submit">Submit</button>
       </form>
       {fullName && (
